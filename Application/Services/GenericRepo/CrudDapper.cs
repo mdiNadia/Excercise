@@ -31,13 +31,28 @@ namespace Application.Services.GenericRepo
         }
 
 
-        public List<T> GetAll<T>(string sqlQuery)
+        public List<T> GetAll<T>(string ModelEntity)
         {
- 
+            var sqlQuery = $@"Select * from {ModelEntity}";
             string connectionString = _config.GetConnectionString("DefaultConnection");
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                
+
+                return connection.Query<T>(sqlQuery).ToList();
+
+            }
+        }
+
+        public List<T> GetAllInPaging<T>(int skip, int take, string ModelEntity)
+        {
+
+            var sqlQuery = $@"SELECT * FROM {ModelEntity}
+                           ORDER BY Id OFFSET {skip} 
+                           ROWS FETCH NEXT {take} ROWS ONLY";
+            string connectionString = _config.GetConnectionString("DefaultConnection");
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+
                 return connection.Query<T>(sqlQuery).ToList();
 
             }

@@ -25,7 +25,7 @@ namespace Excercise.Pages
 
         public IActionResult OnGet()
         {
-            var data = _dapper.GetAll<ExcerciseEntity>(@"Select * from ExcerciseEntities");
+            var data = _dapper.GetAll<ExcerciseEntity>("ExcerciseEntities");
             _Model = data;
             return Page();
         }
