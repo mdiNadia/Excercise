@@ -26,10 +26,15 @@ namespace Excercise
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<DataContext>(opt =>
-            {
-                opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
-            });
+            //.net core 5
+            //services.AddDbContext<DataContext>(opt =>
+            //{
+            //    opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
+            //});
+
+            //.net core 6
+            services.AddSqlServer<DataContext>(
+                    Configuration.GetConnectionString("DefaultConnection"));
             services.AddRazorPages();
             services.AddService();
 

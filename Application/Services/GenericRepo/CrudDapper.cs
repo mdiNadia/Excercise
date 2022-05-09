@@ -31,10 +31,9 @@ namespace Application.Services.GenericRepo
         }
 
 
-        public List<T> GetAll<T>(string sp)
+        public List<T> GetAll<T>(string sqlQuery)
         {
-            var sqlQuery = sp;
-
+ 
             string connectionString = _config.GetConnectionString("DefaultConnection");
             using (SqlConnection connection = new SqlConnection(connectionString))
             {

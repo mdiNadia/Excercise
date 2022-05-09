@@ -23,10 +23,13 @@ namespace Excercise.Pages
             this._dapper = dapper;
         }
 
-        public async Task OnGetAsync()
+        public IActionResult OnGet()
         {
             var data = _dapper.GetAll<ExcerciseEntity>(@"Select * from ExcerciseEntities");
             _Model = data;
+            return Page();
         }
+
+
     }
 }
