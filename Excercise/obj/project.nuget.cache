@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "TUJcSe9HNAcK5gittU3IO3vhqqvvuAReiI/8Mcfwse+Y9r01hU5tWkNTuIwCwF53hnshd4masl848MPpTIiQ1w==",
+  "dgSpecHash": "POe2Z9WOBsU4mFibD97mOUq3ZAjOdIWN25HPgL4umOHsHWdsUHmiSTb/7tNDwp9pixlNJRcWenF/KoofdeTX7g==",
   "success": true,
   "projectFilePath": "C:\\Users\\nadia\\Desktop\\Excercise\\Excercise\\Excercise\\Excercise.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\nadia\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\nadia\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\nadia\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\nadia\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\6.0.4\\microsoft.aspnetcore.mvc.razor.extensions.6.0.4.nupkg.sha512",
@@ -51,7 +52,7 @@
     "C:\\Users\\nadia\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\nadia\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "C:\\Users\\nadia\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
-    "C:\\Users\\nadia\\.nuget\\packages\\system.data.sqlclient\\4.8.1\\system.data.sqlclient.4.8.1.nupkg.sha512",
+    "C:\\Users\\nadia\\.nuget\\packages\\system.data.sqlclient\\4.8.3\\system.data.sqlclient.4.8.3.nupkg.sha512",
     "C:\\Users\\nadia\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\nadia\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
     "C:\\Users\\nadia\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.8.0\\system.identitymodel.tokens.jwt.6.8.0.nupkg.sha512",

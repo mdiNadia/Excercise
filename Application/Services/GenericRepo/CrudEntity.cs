@@ -1,11 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
-
 using Microsoft.Extensions.Configuration;
 
 
-namespace Persistence
+namespace Application.Services.GenericRepo
 {
-    public interface IGenericRepository<TEntity> where TEntity : class
+    public interface ICrudEntity<TEntity> where TEntity : class
     {
  
         void Insert(TEntity entity);
@@ -13,15 +12,14 @@ namespace Persistence
 
     }
 
-    public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class
+    public class CrudEntity<TEntity> : ICrudEntity<TEntity> where TEntity : class
     {
-        internal readonly DataContext context;
+
         internal readonly IConfiguration _configuration;
         internal DbSet<TEntity> dbSet;
 
-        public GenericRepository(DataContext context, IConfiguration configuration, DbSet<TEntity> dbSet)
+        public CrudEntity(IConfiguration configuration, DbSet<TEntity> dbSet, DbContext context)
         {
-            this.context = context;
             this._configuration = configuration;
             this.dbSet = context.Set<TEntity>();
 
